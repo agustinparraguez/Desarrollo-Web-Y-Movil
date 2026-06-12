@@ -19,9 +19,11 @@ if (isset($_SESSION['user_id'])) {
         $_SESSION['user_id'] = 1; // asignar un ID de usuario a la sesión
         $_SESSION['username'] = 'Profe :)';
 
-        header("Location: ../../../dashboard/");
+        header("Location: ../../../backoffice/");
         exit(); // siempre hay un redireccionamiento
-    } else {
-        echo 'Credenciales incorrectas. Por favor, inténtalo de nuevo.';
-    }
+    } 
+
+    $_SESSION['error'] = ['login' => 'Error de usuario o contraseña incorrectos'];
+    header("Location: ../");
+    
 }

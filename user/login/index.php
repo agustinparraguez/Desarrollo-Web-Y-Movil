@@ -7,6 +7,17 @@ if (isset($_SESSION['user_id'])) {
     header("Location: ../../dashboard/");
     exit(); // siempre hay un redireccionamiento
 }
+
+$msgerror = '';
+try {
+    if($msgerror = isset($_SESSION['error']['login'])) {
+      $msgerror = $_SESSION['error']['login'];
+    }else {
+      $msgerror = 0;
+    }
+} catch (\Throwable $th) {
+    $error = 'exception';
+}
 ?>
 
 <!doctype html>
@@ -40,7 +51,7 @@ if (isset($_SESSION['user_id'])) {
     <!--begin::Accessibility Features-->
     <!-- Skip links will be dynamically added by accessibility.js -->
     <meta name="supported-color-schemes" content="light dark" />
-    <link rel="preload" href="../../assets/css/adminlte.css" as="style" />
+    <link rel="preload" href="assets/css/adminlte.css" as="style" />
     <!--end::Accessibility Features-->
 
     <!--begin::Fonts-->
@@ -85,8 +96,21 @@ if (isset($_SESSION['user_id'])) {
       <div class="card">
         <div class="card-body login-card-body">
           <p class="login-box-msg">!Hola! Ingresa tus credenciales</p>
-
-          <form action="validate/" method="post">
+          <?php if ($msgerror != 0) { ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>¡Error 1!</strong> <?php echo $msgerror; ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <?php } ?>
+          <?php 
+          if ($msgerror != 0) {
+             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">';
+             echo '<strong>¡Error 2!</strong> ' . $msgerror;
+             echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+             echo '</div>';    
+          } 
+          ?>
+          <form action="auth/" method="post">
             <div class="input-group mb-3">
               <input type="email" class="form-control" placeholder="Ingrese su email" name="username" />
               <div class="input-group-text">

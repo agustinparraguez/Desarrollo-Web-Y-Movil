@@ -9,7 +9,7 @@ session_start();
 
 if (isset($_SESSION['user_id'])) {
     // el usuario esta logueado, redirigir al dashboard
-    header("Location: dashboard/");
+    header("Location: backoffice/");
     exit(); // siempre hay un redireccionamiento
 } else {
     // si no SESION es pq no hay usuario logueado, mostrar el formulario de login
