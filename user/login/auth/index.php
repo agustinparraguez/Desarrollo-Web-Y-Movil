@@ -19,6 +19,8 @@ if (isset($_SESSION['user_id'])) {
         $_SESSION['user_id'] = 1; // asignar un ID de usuario a la sesión
         $_SESSION['username'] = 'Profe :)';
 
+        $_SESSION['error'] = ['login' => ''];
+
         header("Location: ../../../backoffice/");
         exit(); // siempre hay un redireccionamiento
     } 

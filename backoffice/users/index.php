@@ -112,12 +112,25 @@ $_SESSION['ruta'] = $ruta;
             <div class="row g-4">
               <!--begin::Col-->
               <div class="col-12">
-                 
-              <div class="alert alert-info alert-dismissible fade show" role="alert">
-                <strong>Tipo</strong><br> mensaje 
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>      
               
+              <?php if (count($_SESSION['errores']['items']) > 0) { 
+                if ($_SESSION['errores']['items']['email']) { ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Error Email</strong> <?php echo $_SESSION['errores']['items']['email']; ?>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                <?php }
+                if ($_SESSION['errores']['items']['nombre']) { ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Error Nombre</strong> <?php echo $_SESSION['errores']['items']['nombre']; ?>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                <?php 
+                    }
+                } ?>
+
               </div>
               <!--end::Col-->
               <!--begin::Col-->
@@ -218,7 +231,7 @@ $_SESSION['ruta'] = $ruta;
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Agregar Usuario</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="./add/ method="post">
+            <form action="./add/" method="post">
                 <div class="modal-body">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Usuario">
