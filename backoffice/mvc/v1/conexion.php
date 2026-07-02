@@ -14,8 +14,8 @@ class Conexion{
     $this->host = '127.0.0.1';
     $this->port = 3306;
     $this->bd = 'coningen_funev1';
-    $this->username = 'coningen_funev1';
-    $this->password = 'h0l4.mund0.2026';
+    $this->username = 'root';
+    $this->password = '';
 
     }
 
@@ -40,13 +40,3 @@ class Conexion{
         return 0;
     }
 }
-
-$conexion = new Conexion();
-
-echo '<pre>';
-print_r($_SERVER['SERVER_NAME']);
-echo '<hr>';
-$con = $conexion->getConnection();
-$conexion->closeConnection();
-print_r($con);
-echo '</pre>';

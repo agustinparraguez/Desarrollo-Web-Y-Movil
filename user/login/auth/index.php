@@ -20,6 +20,8 @@ if (isset($_SESSION['user_id'])) {
         $_SESSION['username'] = 'Profe :)';
 
         $_SESSION['error'] = ['login' => ''];
+        $_SESSION['errores'] = ['items' => []];
+
 
         header("Location: ../../../backoffice/");
         exit(); // siempre hay un redireccionamiento

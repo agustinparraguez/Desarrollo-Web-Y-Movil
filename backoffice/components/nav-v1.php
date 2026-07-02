@@ -1,3 +1,16 @@
+<?php
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['user_id'])) {
+    // si no hay sesión activa, mostrar el formulario de login
+    header("Location: ../");
+    exit(); // siempre que hay un redireccionamiento
+}
+?>
+
 <nav class="app-header navbar navbar-expand bg-body">
         <!--begin::Container-->
         <div class="container-fluid">
