@@ -31,7 +31,7 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
     <meta name="author" content="ColorlibHQ" />
     <meta
       name="description"
-      content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS. Fully accessible with WCAG 2.1 AA compliance."
+      content="CRM Ventas"
     />
     <meta
       name="keywords"
@@ -137,9 +137,9 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                 <!--begin::Small Box Widget 1-->
                 <div class="small-box text-bg-primary">
                   <div class="inner">
-                    <h3>150</h3>
+                    <h3>5</h3>
 
-                    <p>New Orders</p>
+                    <p>Ventas a cerrar</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -156,7 +156,7 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 1-->
@@ -166,9 +166,9 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                 <!--begin::Small Box Widget 2-->
                 <div class="small-box text-bg-success">
                   <div class="inner">
-                    <h3>53<sup class="fs-5">%</sup></h3>
+                    <h3>14<sup class="fs-5">%</sup></h3>
 
-                    <p>Bounce Rate</p>
+                    <p>Crecimiento de ventas</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -185,7 +185,7 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 2-->
@@ -195,9 +195,9 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                 <!--begin::Small Box Widget 3-->
                 <div class="small-box text-bg-warning">
                   <div class="inner">
-                    <h3>44</h3>
+                    <h3>40</h3>
 
-                    <p>User Registrations</p>
+                    <p>Nuevos prospectos</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -214,7 +214,7 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                     href="#"
                     class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 3-->
@@ -224,9 +224,9 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                 <!--begin::Small Box Widget 4-->
                 <div class="small-box text-bg-danger">
                   <div class="inner">
-                    <h3>65</h3>
+                    <h3>34</h3>
 
-                    <p>Unique Visitors</p>
+                    <p>Prospectos a agendar</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -250,7 +250,7 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 4-->
@@ -258,39 +258,17 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
               <!--end::Col-->
             </div>
             <!--end::Row-->
-            <!--begin::Row-->
+              <!--begin::Row-->
             <div class="row">
-              <!-- Start col -->
-              <div class="col-lg-7 connectedSortable">
+              <div class="col-md-12">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h3 class="card-title">Sales Value</h3>
-                  </div>
-
-                  <div class="card-body">
-                    <div id="revenue-chart"></div>
-                  </div>
-                </div>
-                <!-- /.card -->
-
-                <!-- DIRECT CHAT -->
-                <div class="card direct-chat direct-chat-primary mb-4">
-                  <div class="card-header">
-                    <h3 class="card-title">Direct Chat</h3>
+                    <h5 class="card-title">Ventas mensuales</h5>
 
                     <div class="card-tools">
-                      <span title="3 New Messages" class="badge text-bg-primary"> 3 </span>
                       <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
                         <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
                         <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        title="Contacts"
-                        data-lte-toggle="chat-pane"
-                      >
-                        <i class="bi bi-chat-text-fill"></i>
                       </button>
                       <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
                         <i class="bi bi-x-lg"></i>
@@ -299,268 +277,186 @@ $_SESSION['titulos'] = ['WebTitle' => 'Programación Web en PHP con AdminLTE'];
                   </div>
                   <!-- /.card-header -->
                   <div class="card-body">
-                    <!-- Conversations are loaded here -->
-                    <div class="direct-chat-messages">
-                      <!-- Message. Default to the start -->
-                      <div class="direct-chat-msg">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-start"> Alexander Pierce </span>
-                          <span class="direct-chat-timestamp float-end"> 23 Jan 2:00 pm </span>
-                        </div>
-                        <!-- /.direct-chat-infos -->
-                        <img
-                          class="direct-chat-img"
-                          src="../assets//img/user1-128x128.jpg"
-                          alt="message user image"
-                        />
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        <!-- /.direct-chat-text -->
-                      </div>
-                      <!-- /.direct-chat-msg -->
+                    <!--begin::Row-->
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p class="text-center">
+                          <strong>Periodo: 1 de Junio, 2026 - 1 de Julio, 2026</strong>
+                        </p>
 
-                      <!-- Message to the end -->
-                      <div class="direct-chat-msg end">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-end"> Sarah Bullock </span>
-                          <span class="direct-chat-timestamp float-start"> 23 Jan 2:05 pm </span>
-                        </div>
-                        <!-- /.direct-chat-infos -->
-                        <img
-                          class="direct-chat-img"
-                          src="../assets//img/user3-128x128.jpg"
-                          alt="message user image"
-                        />
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">You better believe it!</div>
-                        <!-- /.direct-chat-text -->
+                        <div id="sales-chart"></div>
                       </div>
-                      <!-- /.direct-chat-msg -->
+                      <!-- /.col -->
+                      <div class="col-md-4">
+                        <p class="text-center">
+                          <strong>Metas</strong>
+                        </p>
 
-                      <!-- Message. Default to the start -->
-                      <div class="direct-chat-msg">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-start"> Alexander Pierce </span>
-                          <span class="direct-chat-timestamp float-end"> 23 Jan 5:37 pm </span>
+                        <div class="progress-group">
+                          Prospectos
+                          <span class="float-end"><b>160</b>/200</span>
+                          <div class="progress progress-sm">
+                            <div class="progress-bar text-bg-primary" style="width: 80%"></div>
+                          </div>
                         </div>
-                        <!-- /.direct-chat-infos -->
-                        <img
-                          class="direct-chat-img"
-                          src="../assets//img/user1-128x128.jpg"
-                          alt="message user image"
-                        />
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          Working with AdminLTE on a great new app! Wanna join?
-                        </div>
-                        <!-- /.direct-chat-text -->
-                      </div>
-                      <!-- /.direct-chat-msg -->
+                        <!-- /.progress-group -->
 
-                      <!-- Message to the end -->
-                      <div class="direct-chat-msg end">
-                        <div class="direct-chat-infos clearfix">
-                          <span class="direct-chat-name float-end"> Sarah Bullock </span>
-                          <span class="direct-chat-timestamp float-start"> 23 Jan 6:10 pm </span>
+                        <div class="progress-group">
+                          Agendamientos
+                          <span class="float-end"><b>72</b>/100</span>
+                          <div class="progress progress-sm">
+                            <div class="progress-bar text-bg-danger" style="width: 75%"></div>
+                          </div>
                         </div>
-                        <!-- /.direct-chat-infos -->
-                        <img
-                          class="direct-chat-img"
-                          src="../assets//img/user3-128x128.jpg"
-                          alt="message user image"
-                        />
-                        <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">I would love to.</div>
-                        <!-- /.direct-chat-text -->
+
+                        <!-- /.progress-group -->
+                        <div class="progress-group">
+                          <span class="progress-text">Citas concretadas</span>
+                          <span class="float-end"><b>29</b>/50</span>
+                          <div class="progress progress-sm">
+                            <div class="progress-bar text-bg-success" style="width: 60%"></div>
+                          </div>
+                        </div>
+
+                        <!-- /.progress-group -->
+                        <div class="progress-group">
+                          Ventas cerradas
+                          <span class="float-end"><b>11</b>/25</span>
+                          <div class="progress progress-sm">
+                            <div class="progress-bar text-bg-warning" style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
                       </div>
-                      <!-- /.direct-chat-msg -->
+                      <!-- /.col -->
                     </div>
-                    <!-- /.direct-chat-messages-->
+                    <!--end::Row-->
+                  </div>
+                  <!-- ./card-body -->
+                  <div class="card-footer">
+                    <!--begin::Row-->
+                    <div class="row">
+                      <div class="col-md-3 col-6">
+                        <div class="text-center border-end">
+                          <span class="text-success">
+                            <i class="bi bi-caret-up-fill"></i> 17%
+                          </span>
+                          <h5 class="fw-bold mb-0">$354.390.870</h5>
+                          <span class="text-uppercase">Ganancia bruta</span>
+                        </div>
+                      </div>
 
-                    <!-- Contacts are loaded here -->
-                    <div class="direct-chat-contacts">
-                      <ul class="contacts-list">
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user1-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                Count Dracula
-                                <small class="contacts-list-date float-end"> 2/28/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> How have you been? I was... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user7-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                Sarah Doe
-                                <small class="contacts-list-date float-end"> 2/23/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> I will be waiting for... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user3-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                Nadia Jolie
-                                <small class="contacts-list-date float-end"> 2/20/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> I'll call you back at... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user5-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                Nora S. Vans
-                                <small class="contacts-list-date float-end"> 2/10/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> Where is your new... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user6-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                John K.
-                                <small class="contacts-list-date float-end"> 1/27/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> Can I take a look at... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                        <li>
-                          <a href="#">
-                            <img
-                              class="contacts-list-img"
-                              src="../assets//img/user8-128x128.jpg"
-                              alt="User Avatar"
-                            />
-
-                            <div class="contacts-list-info">
-                              <span class="contacts-list-name">
-                                Kenneth M.
-                                <small class="contacts-list-date float-end"> 1/4/2023 </small>
-                              </span>
-                              <span class="contacts-list-msg"> Never mind I found... </span>
-                            </div>
-                            <!-- /.contacts-list-info -->
-                          </a>
-                        </li>
-                        <!-- End Contact Item -->
-                      </ul>
-                      <!-- /.contacts-list -->
+                      <!-- /.col -->
+                      <div class="col-md-3 col-6">
+                        <div class="text-center border-end">
+                          <span class="text-info"> <i class="bi bi-caret-left-fill"></i> 0% </span>
+                          <h5 class="fw-bold mb-0">$217.985.000</h5>
+                          <span class="text-uppercase">Costo total</span>
+                        </div>
+                      </div>
+                      <!-- /.col -->
+                      <div class="col-md-3 col-6">
+                        <div class="text-center border-end">
+                          <span class="text-success">
+                            <i class="bi bi-caret-up-fill"></i> 20%
+                          </span>
+                          <h5 class="fw-bold mb-0">$136.405.870</h5>
+                          <span class="text-uppercase">Utilidades</span>
+                        </div>
+                      </div>
+                      <!-- /.col -->
+                      <div class="col-md-3 col-6">
+                        <div class="text-center">
+                          <span class="text-danger">
+                            <i class="bi bi-caret-down-fill"></i> 18%
+                          </span>
+                          <h5 class="fw-bold mb-0">272/375 </h5>
+                          <span class="text-uppercase">Metas cumplidas</span>
+                        </div>
+                      </div>
                     </div>
-                    <!-- /.direct-chat-pane -->
+                    <!--end::Row-->
+                  </div>
+                  <!-- /.card-footer -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!--end::Row-->
+            <div class="card mb-4">
+                  <div class="card-header">
+                    <h3 class="card-title">Grafico de ventas pendientes</h3>
+
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
+                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <!--begin::Row-->
+                    <div class="row">
+                      <div class="col-12">
+                        <div id="pie-chart" style="min-height: 148.7px;"><div id="apexcharts2g6b7opch" class="apexcharts-canvas apexcharts2g6b7opch apexcharts-theme-light" style="width: 281px; height: 148.7px;"><svg id="SvgjsSvg1912" width="281" height="148.7" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1914" class="apexcharts-inner apexcharts-graphical" transform="translate(22, 0)"><defs id="SvgjsDefs1913"><clipPath id="gridRectMask2g6b7opch"><rect id="SvgjsRect1916" width="152" height="352" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMask2g6b7opch"></clipPath><clipPath id="nonForecastMask2g6b7opch"></clipPath><clipPath id="gridRectMarkerMask2g6b7opch"><rect id="SvgjsRect1917" width="150" height="354" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1918" class="apexcharts-pie"><g id="SvgjsG1919" transform="translate(0, 0) scale(1)"><circle id="SvgjsCircle1920" r="42.392682926829266" cx="73" cy="73" fill="transparent"></circle><g id="SvgjsG1921" class="apexcharts-slices"><g id="SvgjsG1922" class="apexcharts-series apexcharts-pie-series" seriesName="Chrome" rel="1" data:realIndex="0"><path id="SvgjsPath1923" d="M 73 7.7804878048780495 A 65.21951219512195 65.21951219512195 0 0 1 137.7439885204438 80.86134348787155 L 115.08359253828849 78.10987326711651 A 42.392682926829266 42.392682926829266 0 0 0 73 30.607317073170734 L 73 7.7804878048780495 z" fill="rgba(13,110,253,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="96.92307692307692" data:startAngle="0" data:strokeWidth="2" data:value="700" data:pathOrig="M 73 7.7804878048780495 A 65.21951219512195 65.21951219512195 0 0 1 137.7439885204438 80.86134348787155 L 115.08359253828849 78.10987326711651 A 42.392682926829266 42.392682926829266 0 0 0 73 30.607317073170734 L 73 7.7804878048780495 z" stroke="#ffffff"></path></g><g id="SvgjsG1924" class="apexcharts-series apexcharts-pie-series" seriesName="Edge" rel="2" data:realIndex="1"><path id="SvgjsPath1925" d="M 137.7439885204438 80.86134348787155 A 65.21951219512195 65.21951219512195 0 0 1 88.60805088548612 136.32435170237227 L 83.14523307556598 114.16082860654197 A 42.392682926829266 42.392682926829266 0 0 0 115.08359253828849 78.10987326711651 L 137.7439885204438 80.86134348787155 z" fill="rgba(32,201,151,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="69.23076923076921" data:startAngle="96.92307692307692" data:strokeWidth="2" data:value="500" data:pathOrig="M 137.7439885204438 80.86134348787155 A 65.21951219512195 65.21951219512195 0 0 1 88.60805088548612 136.32435170237227 L 83.14523307556598 114.16082860654197 A 42.392682926829266 42.392682926829266 0 0 0 115.08359253828849 78.10987326711651 L 137.7439885204438 80.86134348787155 z" stroke="#ffffff"></path></g><g id="SvgjsG1926" class="apexcharts-series apexcharts-pie-series" seriesName="FireFox" rel="3" data:realIndex="2"><path id="SvgjsPath1927" d="M 88.60805088548612 136.32435170237227 A 65.21951219512195 65.21951219512195 0 0 1 29.75146370400281 121.81750586852502 L 44.88845140760183 104.73137881454126 A 42.392682926829266 42.392682926829266 0 0 0 83.14523307556598 114.16082860654197 L 88.60805088548612 136.32435170237227 z" fill="rgba(255,193,7,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-2" index="0" j="2" data:angle="55.38461538461539" data:startAngle="166.15384615384613" data:strokeWidth="2" data:value="400" data:pathOrig="M 88.60805088548612 136.32435170237227 A 65.21951219512195 65.21951219512195 0 0 1 29.75146370400281 121.81750586852502 L 44.88845140760183 104.73137881454126 A 42.392682926829266 42.392682926829266 0 0 0 83.14523307556598 114.16082860654197 L 88.60805088548612 136.32435170237227 z" stroke="#ffffff"></path></g><g id="SvgjsG1928" class="apexcharts-series apexcharts-pie-series" seriesName="Safari" rel="4" data:realIndex="3"><path id="SvgjsPath1929" d="M 29.75146370400281 121.81750586852502 A 65.21951219512195 65.21951219512195 0 0 1 19.32539372196004 35.951094322948556 L 38.11150591927403 48.918211309916565 A 42.392682926829266 42.392682926829266 0 0 0 44.88845140760183 104.73137881454126 L 29.75146370400281 121.81750586852502 z" fill="rgba(214,51,132,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-3" index="0" j="3" data:angle="83.07692307692307" data:startAngle="221.53846153846152" data:strokeWidth="2" data:value="600" data:pathOrig="M 29.75146370400281 121.81750586852502 A 65.21951219512195 65.21951219512195 0 0 1 19.32539372196004 35.951094322948556 L 38.11150591927403 48.918211309916565 A 42.392682926829266 42.392682926829266 0 0 0 44.88845140760183 104.73137881454126 L 29.75146370400281 121.81750586852502 z" stroke="#ffffff"></path></g><g id="SvgjsG1930" class="apexcharts-series apexcharts-pie-series" seriesName="Opera" rel="5" data:realIndex="4"><path id="SvgjsPath1931" d="M 19.32539372196004 35.951094322948556 A 65.21951219512195 65.21951219512195 0 0 1 57.391949114513864 9.675648297627745 L 62.85476692443401 31.839171393458038 A 42.392682926829266 42.392682926829266 0 0 0 38.11150591927403 48.918211309916565 L 19.32539372196004 35.951094322948556 z" fill="rgba(111,66,193,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-4" index="0" j="4" data:angle="41.53846153846155" data:startAngle="304.6153846153846" data:strokeWidth="2" data:value="300" data:pathOrig="M 19.32539372196004 35.951094322948556 A 65.21951219512195 65.21951219512195 0 0 1 57.391949114513864 9.675648297627745 L 62.85476692443401 31.839171393458038 A 42.392682926829266 42.392682926829266 0 0 0 38.11150591927403 48.918211309916565 L 19.32539372196004 35.951094322948556 z" stroke="#ffffff"></path></g><g id="SvgjsG1932" class="apexcharts-series apexcharts-pie-series" seriesName="IE" rel="6" data:realIndex="5"><path id="SvgjsPath1933" d="M 57.391949114513864 9.675648297627745 A 65.21951219512195 65.21951219512195 0 0 1 72.98861704781429 7.780488798228021 L 72.99260108107929 30.607317718848215 A 42.392682926829266 42.392682926829266 0 0 0 62.85476692443401 31.839171393458038 L 57.391949114513864 9.675648297627745 z" fill="rgba(173,181,189,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-5" index="0" j="5" data:angle="13.846153846153868" data:startAngle="346.15384615384613" data:strokeWidth="2" data:value="100" data:pathOrig="M 57.391949114513864 9.675648297627745 A 65.21951219512195 65.21951219512195 0 0 1 72.98861704781429 7.780488798228021 L 72.99260108107929 30.607317718848215 A 42.392682926829266 42.392682926829266 0 0 0 62.85476692443401 31.839171393458038 L 57.391949114513864 9.675648297627745 z" stroke="#ffffff"></path></g></g></g></g><line id="SvgjsLine1934" x1="0" y1="0" x2="146" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1935" x1="0" y1="0" x2="146" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1915" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend apexcharts-align-center apx-legend-position-right" style="position: absolute; left: auto; top: 24px; right: 5px;"><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="1" seriesname="Chrome" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(13, 110, 253) !important; color: rgb(13, 110, 253); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="1" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="1" i="0" data:default-text="Chrome" data:collapsed="false">Chrome</span></div><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="2" seriesname="Edge" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(32, 201, 151) !important; color: rgb(32, 201, 151); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="2" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="2" i="1" data:default-text="Edge" data:collapsed="false">Edge</span></div><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="3" seriesname="FireFox" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(255, 193, 7) !important; color: rgb(255, 193, 7); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="3" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="3" i="2" data:default-text="FireFox" data:collapsed="false">FireFox</span></div><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="4" seriesname="Safari" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(214, 51, 132) !important; color: rgb(214, 51, 132); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="4" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="4" i="3" data:default-text="Safari" data:collapsed="false">Safari</span></div><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="5" seriesname="Opera" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(111, 66, 193) !important; color: rgb(111, 66, 193); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="5" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="5" i="4" data:default-text="Opera" data:collapsed="false">Opera</span></div><div class="apexcharts-legend-series" style="margin: 2px 5px;" rel="6" seriesname="IE" data:collapsed="false"><span class="apexcharts-legend-marker" style="background: rgb(173, 181, 189) !important; color: rgb(173, 181, 189); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;" rel="6" data:collapsed="false"></span><span class="apexcharts-legend-text" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;" rel="6" i="5" data:default-text="IE" data:collapsed="false">IE</span></div></div><div class="apexcharts-tooltip apexcharts-theme-dark"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(13, 110, 253);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(32, 201, 151);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 3;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 193, 7);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 4;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(214, 51, 132);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 5;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(111, 66, 193);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 6;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(173, 181, 189);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                      </div>
+                      <!-- /.col -->
+                    </div>
+                    <!--end::Row-->
                   </div>
                   <!-- /.card-body -->
-                  <div class="card-footer">
-                    <form action="#" method="post">
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          name="message"
-                          placeholder="Type Message ..."
-                          class="form-control"
-                        />
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-primary">Send</button>
-                        </span>
-                      </div>
-                    </form>
+                  <div class="card-footer p-0">
+                    <ul class="nav nav-pills flex-column" role="navigation" aria-label="Navigation 18">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          United States of America
+                          <span class="float-end text-danger">
+                            <i class="bi bi-arrow-down fs-7"></i>
+                            12%
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          India
+                          <span class="float-end text-success">
+                            <i class="bi bi-arrow-up fs-7"></i> 4%
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          China
+                          <span class="float-end text-info">
+                            <i class="bi bi-arrow-left fs-7"></i> 0%
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- /.card-footer-->
+                  <!-- /.footer -->
                 </div>
+            <!--begin::Row-->
+            <div class="row">
+              <!-- Start col -->
+              <div class="col-lg-7 connectedSortable">
+                
+                <!-- /.card -->
+            <div class="card mb-4">
+                 
+                <!-- DIRECT CHAT -->
+                
                 <!-- /.direct-chat -->
               </div>
               <!-- /.Start col -->
 
               <!-- Start col -->
-              <div class="col-lg-5 connectedSortable">
-                <div class="card text-white bg-primary bg-gradient border-primary mb-4">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Sales Value</h3>
-                    <div class="card-tools">
-                      <button
-                        type="button"
-                        class="btn btn-primary btn-sm"
-                        data-lte-toggle="card-collapse"
-                      >
-                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
-                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div id="world-map" style="height: 220px"></div>
-                  </div>
-                  <div class="card-footer border-0">
-                    <!--begin::Row-->
-                    <div class="row">
-                      <div class="col-4 text-center">
-                        <div id="sparkline-1" class="text-dark"></div>
-                        <div class="text-white">Visitors</div>
-                      </div>
-                      <div class="col-4 text-center">
-                        <div id="sparkline-2" class="text-dark"></div>
-                        <div class="text-white">Online</div>
-                      </div>
-                      <div class="col-4 text-center">
-                        <div id="sparkline-3" class="text-dark"></div>
-                        <div class="text-white">Sales</div>
-                      </div>
-                    </div>
-                    <!--end::Row-->
-                  </div>
-                </div>
+              
               </div>
               <!-- /.Start col -->
             </div>

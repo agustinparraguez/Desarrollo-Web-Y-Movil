@@ -103,10 +103,10 @@ class Usuario {
         $this->rol = $_n;
     }
     public function setFechaCreado($_n) {
-        $this->dateCreate = $_n;
+        $this->datecreate = $_n;
     }
     public function setFechaActualizado($_n) {
-        $this->dateUpdate = $_n;
+        $this->dateupdate = $_n;
     }
     public function setActivo($_n) {
         $this->active = $_n;
@@ -115,7 +115,7 @@ class Usuario {
     public function getAll(){
         $lista = [];
         $con = new Conexion();
-        $query = "SELECT id, nombre, apellido, username, password, rol, datecreate, dateupdate, active FROM usuario ORDER BY id ASC";
+        $query = "SELECT id, firstname, lastname, username, password, rol, datecrate, dateupdate, active FROM usuario ORDER BY id ASC";
         $rs = mysqli_query($con->getConnection(), $query);
         if($rs){
             while($registro = mysqli_fetch_assoc($rs)) {
